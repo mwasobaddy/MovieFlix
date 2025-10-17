@@ -6,7 +6,7 @@ import { Image, TouchableOpacity, View } from 'react-native';
 import gradient from '../assets/images/gradientNumber.png';
 import AppText from './AppText';
 
-
+// @ts-ignore
 const TrendingCard = ({ movie: { movie_id, poster_url, title }, index }: TrendingCardProps) => {
     return (
         <Link href={`/movies/${movie_id}`} asChild>

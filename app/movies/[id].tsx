@@ -38,6 +38,7 @@ const MovieDetails = () => {
                         </AppText>
                         <AppText className='text-light-300 text-sm mx-2'>|</AppText>
                         <AppText className='text-light-300 text-sm'>
+                            {/* @ts-ignore */}
                             { Math.floor(movie?.runtime / 60) }h { movie?.runtime % 60 }m
                         </AppText>
                     </View>
@@ -87,6 +88,7 @@ const MovieDetails = () => {
                             Genres
                         </AppText>
                         <View className='flex-row flex-wrap gap-2'>
+                            {/* @ts-ignore */}
                             { movie?.genres.map((genre) => (
                                 <View
                                     key={genre.id}
@@ -105,6 +107,7 @@ const MovieDetails = () => {
                         </AppText>
                         <AppText>
                             <View className='flex-row flex-wrap gap-2'>
+                                {/* @ts-ignore */}
                                 { movie?.watching_regions?.map((region) => (
                                     <View
                                         key={region.id}

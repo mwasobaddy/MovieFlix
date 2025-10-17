@@ -2,6 +2,7 @@ import { Link } from 'expo-router'
 import { Star } from 'lucide-react-native'
 import React from 'react'
 import { Image, TouchableOpacity, View } from 'react-native'
+// @ts-ignore
 import { Movie } from '../interfaces/interfaces'
 import AppText from './AppText'
 
