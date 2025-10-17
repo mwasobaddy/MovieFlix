@@ -14,3 +14,25 @@ export interface Movie {
   vote_average?: number;
   vote_count?: number;
 }
+
+
+
+export interface TrendingMovie {
+    id: number;
+    title: string;
+    poster_url: string;
+    count: number;
+}
+
+export type MovieDetails = {
+    id: number;
+    title: string;
+    overview: string;
+    release_date: string;
+    poster_path: string;
+    backdrop_path?: string;
+    genres?: { id: number; name: string }[];
+    runtime?: number;
+    vote_average?: number;
+    [key: string]: any; // Add more fields as needed
+};
