@@ -89,6 +89,7 @@ export default function Index() {
                       />
                     )}
 
+                    /* @ts-ignore */
                     keyExtractor={(item) => item.movie_id.toString()}
 
                     horizontal
