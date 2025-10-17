@@ -1,6 +1,7 @@
 import * as Font from "expo-font";
 import { Stack } from "expo-router";
 import React, { useEffect, useState } from "react";
+import { StatusBar } from "react-native";
 import Loader from "../components/Loader";
 import "./globals.css";
 
@@ -21,9 +22,12 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      <Stack.Screen name="movies/[id]" options={{ headerShown: false }} />
-    </Stack>
+    <>
+      <StatusBar hidden={true} />
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="movies/[id]" options={{ headerShown: false }} />
+      </Stack>
+    </>
   );
 }
